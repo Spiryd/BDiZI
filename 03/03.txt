@@ -1,0 +1,2 @@
+1.1 CREATE DATABASE census;
+1.2 
