@@ -1,2 +1,5 @@
 1.1 CREATE DATABASE census;
-1.2 
+1.2 CREATE TABLE Ludzie( PESEL varchar(11) NOT NULL, imie varchar(30) NOT NULL, nazwisko varchar(30) NOT NULL, data_urodzenia date NOT NULL,plec enum('K', 'M') NOT NULL, PRIMARY KEY (PESEL));
+1.3 CREATE TABLE Zawody( zawod_id int NOT NULL AUTO_INCREMENT, nazwa varchar(50) NOT NULL, pensja_min float NOT NULL, pensja_max float NOT NULL, PRIMARY KEY(zawod_id), CONSTRAINT minmax CHECK(pensja_min >= 0 and pensja_max >=0 and pensja_min < pensja_max));
+1.4 CREATE TABLE Pracownicy (PESEL char(11) NOT NULL, zawod_id int NOT NULL, pensja float NOT NULL);
+1.5 INSERT INTO ludzie VALUES (), ();
