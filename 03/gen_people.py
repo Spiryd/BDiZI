@@ -42,7 +42,10 @@ def gen_pesel(gender, birth_date):
     month = birth_date.month
     day = birth_date.day
     month_key = math.floor(year/100)
-    pesel += str(year - month_key*100)# two first numbers for year
+    if len(str(year - (month_key*100))) == 1:
+        pesel += ("0" + str(year - (month_key*100)))# two first numbers for year
+    else:
+        pesel += str(year - (month_key*100))# two first numbers for year
     pesel += str(month_lut[month_key][month - 1])# two next numbers for month
     #next two for day
     if day < 10:
