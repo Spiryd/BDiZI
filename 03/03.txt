@@ -123,8 +123,8 @@ DELIMITER ;
 
 6.3.5 getConnection, PreparedStatement statement, prepareStatement, ?, ?, statement.setString(1, name), statement.setString(2, mail)
 6.3.6 
-6.3.9 a';/**/select/**/*/**/from/**/user_system_data;--
-6.3.10 a';/**/seselectlect/**/*/**/frfromom/**/user_system_data;--
+6.3.9 
+6.3.10 
 6.3.12
 
 6. wnioski: trzeba kożystać z Prepared Statements i Parametrized Statements i filtracji inputu
